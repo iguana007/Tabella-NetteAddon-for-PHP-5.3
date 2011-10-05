@@ -1,0 +1,25 @@
+<?php
+
+class TabellaTestPresenter extends BasePresenter
+{
+
+	public function renderDefault()
+	{
+		$this->template->anyVariable = 'any value';
+	}
+	
+	public function actionDefault()
+	{
+		$this->template->all = $this->models->user->all();
+	}
+	
+	protected function createComponentGridTest($name)
+	{
+		$grid = new DataGrid\DataGrid;
+		$grid->bindDataTable($this->user->dataSource);
+		$this->addComponent($grid, $name);
+	}
+
+}
+
+//{control editableTabella}

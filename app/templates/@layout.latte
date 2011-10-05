@@ -1,0 +1,56 @@
+{**
+ * My Application layout template.
+ *
+ * @copyright  Copyright (c) 2011	Stepan Macha
+ * @package    Spenatovo
+ *
+ * @param string   $basePath web base path
+ * @param string   $robots   tell robots how to index the content of a page (optional)
+ * @param array    $flashes  flash messages
+ *}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<meta name="description" content="Spenatovo">
+	<meta name="robots" content="{$robots}" n:ifset="$robots">
+
+	<title>Spenatovo</title>
+
+	<link rel="stylesheet" media="screen,projection,tv" href="{$basePath}/css/main.css">
+	<link rel="stylesheet" media="screen,projection,tv" href="{$basePath}/css/screen.css">
+	<link rel="stylesheet" media="print" href="{$basePath}/css/print.css">
+	<!-- jQuery UI CSS -->
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/ui-lightness/jquery-ui.css">
+	<!-- Web ICON -->
+	<link rel="shortcut icon" href="{$basePath}/favicon.ico" type="image/x-icon">
+
+	{block head}{/block}
+</head>
+
+<body>
+	<!-- messages -->
+	<div n:foreach="$flashes as $flash" class="flash {$flash->type}">{$flash->message}</div>
+
+	{include #content}
+
+	<!-- scripts -->
+	<!-- jQuery JS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+
+	<!-- jQuery UI JS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js" type="text/javascript"></script>
+	<!-- Nette JS -->
+	<script src="{$basePath}/js/jquery.nette.js"></script>
+	<script src="{$basePath}/js/netteForms.js"></script>
+	<script src="{$basePath}/js/jquery.livequery.js"></script>
+	<!-- Nette Addons JS -->
+	<script src="{$basePath}/js/nette.tabella.js"></script>
+
+{*TODO odstranit po dokončení aplikace*}
+{dump}
+
+</body>
+</html>

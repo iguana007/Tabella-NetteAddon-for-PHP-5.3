@@ -1,0 +1,80 @@
+<?php
+
+echo "Sloučit CSS soubory\n";
+
+$dir = "./css.d/";
+$target_file_name = "main.css";
+$target = "./";
+$target_file = $target.$target_file_name;
+
+if(file_exists($dir))
+{
+	/* If old CSS exists, create BACKUP, and delete it */
+	if(file_exists($target_file))
+	{
+		//echo "\nNalezena stará verze, vytvářím zálohu: ";
+		//rename($target_file, $target_file.".".time().".BAK");
+		//echo $target_file.".".time().".BAK\n";
+		unlink($target_file);
+	}
+	/* Scan DIR and glue new CSS */
+	$files = scandir($dir);
+	/* Odstranit z pole soubory, které nechci sloučit */
+	foreach ($files as $k => $f)
+	{
+		$pattern = "/[^.]+\.(css){1}$/";
+		if(preg_match($pattern, $f, $a) < 1)
+		{
+			unset($files[$k]);
+		}
+	}
+
+	/*Čítač*/
+	$count=0;
+
+	echo "--\nZačínám slučovat:\n";
+
+	foreach ($files as $f)
+	{
+		$file_path = $dir.$f;
+		if(is_file($file_path))
+		{
+			$count++;
+			echo $f."\n";
+			$content = file_get_contents($file_path);
+			$content .= "\n";
+			/*Zmenšit Soubor odstraněním mezer...*/
+			//$w = array("\t", "  ", "\n", "\t\r");
+			//$content = str_replace($w, " ", $content);
+			$w = array(
+				"#/\*(.*?)\*/#sm", // komentáře
+				"/[\n]+/",
+				"/[\t]+/",
+				"/[  ]+/",
+				"/(; )/",
+				"/(: )/",
+				"/(\} )/",
+				"/(, )/"
+			);
+			$r = array(
+				"",
+				" ",
+				" ",
+				" ",
+				";",
+				":",
+				"}",
+				","
+			);
+			ksort($w);
+			ksort($r);
+			$content = preg_replace($w, $r, $content);
+
+			file_put_contents($dir."../".$target_file_name, $content, FILE_APPEND | LOCK_EX);
+		}
+	}
+}
+
+
+echo "\nSoubor je zapsán v: ".$target_file."\n";
+echo "Sloučeno bylo $count souborů.\n--\nEND\n\n";

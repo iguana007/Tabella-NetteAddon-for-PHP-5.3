@@ -1,0 +1,13 @@
+<?php
+
+namespace Models;
+
+class Users extends Base
+{
+	/*
+	public function test()
+	{
+		return $this->getDatabase()->query('SELECT a FROM foo')->fetchAll();
+	}
+	*/
+}

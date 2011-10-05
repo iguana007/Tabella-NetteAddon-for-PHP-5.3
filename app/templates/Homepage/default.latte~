@@ -1,0 +1,30 @@
+{* Spenatovo homepage *}
+
+{block content}
+<div id="wrapper">
+
+	<h1>Spenatovo</h1>
+
+	<h2>Interface</h2>
+
+	<hr>
+
+	<h2>Tests</h2>
+
+	<ol>
+		<li><h3>Test: all users from db</h3>
+		<p><code>Výstup najdu v DebugBaru.</code></p>
+		<li><h3><a n:href="Sign:out">Odhlásit</a></h3>
+	</ol>
+
+	<ul id="environment">
+		<li>PHP {=PHP_VERSION}</li>
+		<li n:ifset="$_SERVER['SERVER_SOFTWARE']">Server {$_SERVER['SERVER_SOFTWARE']}</li>
+		<li>Nette Framework {=Nette\Framework::VERSION}</li>
+	</ul>
+</div>
+{/block}
+
+
+{block head}
+{/block}

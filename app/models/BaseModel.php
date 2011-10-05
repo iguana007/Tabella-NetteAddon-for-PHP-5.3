@@ -1,0 +1,84 @@
+<?php
+
+namespace Models;
+
+/**
+ * Base model
+ * @author spenat28
+ */
+abstract class Base extends \Nette\Object
+{
+	/** @var \Nette\DI\Container */
+	private $context;
+
+	public function __construct(\Nette\DI\Container $container)
+	{
+		$this->context = $container;
+	}
+	
+	/**
+	 * @return \Nette\DI\Container
+	 */
+	final public function getContext()
+	{
+		return $this->context;
+	}
+
+	/**
+	 * @return \DibiConnection
+	 */
+	final public function getDatabase()
+	{
+		return $this->context->database;
+	}
+
+	/** @var string object name */
+	protected $name;
+
+	/**
+	 * @return \DibiDataSource
+	 */
+	public function getDataSource()
+	{
+		return $this->database->dataSource('SELECT * FROM %n', $this->name);
+	}
+
+	public function getIndexName()
+	{
+		return current($this->database->getDatabaseInfo()->getTable($this->name)->getPrimaryKey()->getColumns())->getName();
+	}
+
+	/** @var bool autoincrement? */
+	protected $autoIncrement = TRUE;
+
+
+	public function insert($values)
+	{
+		return $this->database->insert($this->name, $values)
+			->execute($this->autoIncrement ? \dibi::IDENTIFIER : NULL);
+	}
+
+	public function update($values, $id)
+	{
+		return $this->database->update($this->name, $values)
+			->where("id".$this->name."=%i", $id)
+			->execute();
+	}
+
+	public function delete($id, $iduser=NULL)
+	{
+		//TODO ACL if userid
+		return $this->database->delete($this->name)->where('id'.$this->name.' = %i', $id)->execute();
+	}
+
+	public function save($values, $id)
+	{
+		if($id)
+		{
+			$this->update($values, $id);
+		} else {
+			$this->insert($values);
+		}
+	}
+
+}

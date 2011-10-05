@@ -1,0 +1,62 @@
+<?php
+
+use Nette\Application\UI\Presenter,
+	Nette\Utils\Strings,
+	Nette\Utils\Html,
+	Nette\Environment,
+	Addons\Tabella;
+
+class ContactPresenter extends BasePresenter
+{
+
+	protected function createComponentTable($name)
+	{
+		$grid = new Tabella( $this->models->contact, array(
+			"limit" => 15,
+			"sorting" => "desc",
+			"order"=>"idcontact",
+			"pk"=>$this->models->contact->indexName,
+			"onSubmit" => function(&$t, $post) {
+				$post['born'] = strtotime( $post['born'] );
+				// sloupeček je po editaci vždy ID, protože to je otázka původního javascriptu, který nechci přepisovat
+				$post['idcontact']=$post['id'];unset($post['id']);
+				$t->model->save($post, $post['idcontact']);
+			},
+			"onDelete" => function(&$t, $idcontact) {
+				$t->model->delete($idcontact);
+			}
+		));
+		$grid->addColumn( "Id", "idcontact", array( "width" => 40 ) );
+		$grid->addColumn( "Name", "name", array( 
+				"editable" => true ));
+		$grid->addColumn( "Surname", "surname", array( 
+				"editable" => true 
+		));
+		$grid->addColumn( "Surname 5.pad", "surname5p", array( 
+				"editable" => true 
+		));
+		$grid->addColumn( "Company", "company", array( 
+				"editable" => true 
+		));
+		$grid->addColumn( "WorkPosition", "workPosition", array( 
+				"editable" => true 
+		));
+		$grid->addColumn( "Mail", "mail", array( 
+				"editable" => true 
+		));
+		$grid->addColumn( "MailPersonal", "mailPersonal", array( 
+				"editable" => true 
+		));
+		$grid->addColumn( "Source", "source", array( 
+				"editable" => true 
+		));
+		
+		$grid->addColumn( '<span class="ui-icon ui-icon-circle-plus"></span>', Tabella::ADD, array( 
+				"type" => Tabella::DELETE 
+		));
+	
+		$this->addComponent( $grid, $name );
+	}
+
+}
+

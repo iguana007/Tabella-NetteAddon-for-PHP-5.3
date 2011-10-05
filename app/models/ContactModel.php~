@@ -1,0 +1,25 @@
+<?php
+
+namespace Models;
+
+/**
+ * User authenticator.
+ *
+ * @author     spenat28
+ * @package    ELAI-contactApp
+ */
+final class Contact extends Base
+{
+
+	protected $name = 'contact';
+
+	public function getByEmail($email)
+	{
+		return $this->dataSource
+					->where('email=%s', $email)
+					->where('retik=""')
+					->fetch();
+	}
+
+}
+

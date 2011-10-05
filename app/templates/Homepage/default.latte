@@ -1,0 +1,24 @@
+{* Spenatovo testovací stránka *}
+
+{block content}
+<div id="wrapper">
+
+	<h1>Spenatovo</h1>
+
+	<h2>Interface</h2>
+
+	<hr>
+
+	{control editableTabella}
+	
+	<ul id="environment">
+		<li>PHP {=PHP_VERSION}</li>
+		<li n:ifset="$_SERVER['SERVER_SOFTWARE']">Server {$_SERVER['SERVER_SOFTWARE']}</li>
+		<li>Nette Framework {=Nette\Framework::VERSION}</li>
+	</ul>
+</div>
+{/block}
+
+
+{block head}
+{/block}

@@ -1,0 +1,451 @@
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.505 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 20:53:01
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.513 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 20:53:18
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.556 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 20:53:18
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.483 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 20:53:45
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.542 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 20:53:45
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.519 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 20:53:46
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.537 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 20:53:46
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.491 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 20:53:50
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.567 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 20:53:50
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.490 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 20:55:04
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.570 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 20:55:04
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.488 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 20:55:23
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.564 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 20:55:23
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.491 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 20:55:28
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.554 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 20:55:28
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.486 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 20:56:54
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.556 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 20:56:54
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.500 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 20:57:12
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15 OFFSET 30;
+-- rows: 15
+-- takes: 0.581 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 20:57:12
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.529 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 20:57:14
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.551 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 20:57:14
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.500 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 20:58:20
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.549 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 20:58:20
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.499 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 20:59:30
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.562 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 20:59:30
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.628 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 20:59:55
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.554 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 20:59:55
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.513 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 21:00:19
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.566 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 21:00:19
+
+OK: UPDATE `example` SET `surname`='Mauris', `name`='Scelerisque', `sex`='male', `sons`='4', `daughters`='2', `born`=813798000, `idexample`='38' WHERE idexample=38
+-- takes: 0.440 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/app/models/BaseModel.php:65
+-- driver: mysql/
+-- 2011-10-05 21:00:34
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.517 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 21:00:34
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.571 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 21:00:34
+
+OK: DELETE FROM `example` WHERE idexample = 50
+-- takes: 0.378 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/app/models/BaseModel.php:71
+-- driver: mysql/
+-- 2011-10-05 21:00:40
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.515 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 21:00:40
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.570 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 21:00:40
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.491 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 21:00:42
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` ASC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.554 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 21:00:42
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.505 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 21:00:43
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.557 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 21:00:43
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.496 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 21:00:50
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `born` ASC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.595 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 21:00:50
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.489 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 21:00:51
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `born` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.587 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 21:00:51
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.509 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 21:00:52
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` ASC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.572 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 21:00:52
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.504 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 21:01:59
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` ASC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.557 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 21:01:59
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.492 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 21:02:31
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.570 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 21:02:31
+
+OK: SELECT COUNT(*) FROM (SELECT * FROM `example`) t;
+-- rows: 1
+-- takes: 0.501 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:315
+-- driver: mysql/
+-- 2011-10-05 21:02:35
+
+OK: SELECT * 
+			FROM (SELECT * FROM `example`) t 
+			 
+			 ORDER BY `idexample` DESC 
+			  LIMIT 15;
+-- rows: 15
+-- takes: 0.570 ms
+-- source: /home/spenat/public/www/TabellaEditedBySpenat28/libs/NetteAddons/Tabella/Tabella.php:320
+-- driver: mysql/
+-- 2011-10-05 21:02:35
+

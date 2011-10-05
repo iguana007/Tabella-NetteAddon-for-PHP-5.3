@@ -1,0 +1,47 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+#
+# If you don't protect this directory from direct web access, anybody will be able to see your passwords.
+# http://nette.org/security-warning
+#
+common:
+	php: # PHP configuration
+		date.timezone: Europe/Prague
+		session.save_path: "%tempDir%/sessions"
+		# zlib.output_compression: yes
+
+	#parametry pro modely
+	models:
+		security:
+			salt: zb1g7IHt1I
+	
+	security:
+		salt: zb1g7IHt1I
+
+	services:
+		robotLoader:
+			run: true
+		
+		database:
+			class: DibiConnection
+			arguments: [%database%]
+	
+		modelLoader:
+			class: ModelLoader
+			arguments: [@container]
+
+production < common:
+
+development < common:
+
+	database:
+		hostname: localhost
+		username: root
+		password: root
+		database: nette-addon-tabella
+		charset: utf8
+		profiler:
+			run: true
+			file: %logDir%/dibi.log
+
+console < common:

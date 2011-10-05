@@ -1,0 +1,14 @@
+<?php
+
+use Nette\Application\UI\Presenter,
+	Nette\Utils\Strings,
+	Nette\Utils\Html,
+	Nette\Environment,
+	Addons\Tabella;
+
+class TestPresenter extends BasePresenter
+{
+
+
+}
+
